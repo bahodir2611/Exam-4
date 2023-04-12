@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam-4</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="modalkorzin hidden">
+      <div class="modal-content">
+        <div class="modal-head">
+          <div class="head-left">
+            <a href="#" target="_blank">
+              <img
+                src="./img/div.header__logo.svg"
+                alt="logo"
+                class="headerImg"
+              />
+            </a>
+          </div>
+          <div class="modal-btn">
+            <button class="book-btn global">Buyurtma berish</button>
+          </div>
+        </div>
+        <div class="modal-main">
+          <div class="modal-wrap">
+            <div class="modal-default__content hidden">
+              <div class="modal-default">
+                <h2 class="default-heading">Savatcha bo’sh😕</h2>
+                <p>
+                  Siz hali pitsa buyurtma qilmagan bo'lsangiz kerak. Pitsaga
+                  buyurtma berish uchun asosiy sahifaga o'ting.
+                </p>
+                <div class="default-img">
+                  <img
+                    src="./img/empty-cart.db905d1f4b063162f25b.png.png"
+                    alt="def-img"
+                  />
+                </div>
+                <button class="default-btn global">Ortga qaytish</button>
+              </div>
+            </div>
+
+            <div class="buyurtma-pizza">
+              <div class="modal-pizzas">
+                <div class="pizza-card">
+                  <div class="pizza-tasnif">
+                    <div class="tasnif-img">
+                      <img src="" alt="" />
+                    </div>
+                    <div class="tasnif-text">
+                      <h4 class="tasnif-text__title"></h4>
+                      <p class="tasnif-text__p"></p>
+                    </div>
+                  </div>
+                  <div class="modal-pizza__total">
+                    <div class="amountmodal">
+                      <span class="minus">
+                        <span>-</span>
+                      </span>
+                      <div><b class="sanoq">1</b><b>-ta</b></div>
+                      <span class="plus">
+                        <span>+</span>
+                      </span>
+                    </div>
+                    <h4 class="modal-price">55,000 UZS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-check">
+                <div class="check-text">
+                  <h3>Buyurtma qilish</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis, laudantium?
+                  </p>
+                </div>
+                <div class="check-total">
+                  <span class="checkout">
+                    Umumiy summa:
+                    <span class="check-tolov">60000 UZS</span></span
+                  >
+                  <div class="promocod">
+                    <input
+                      class="check-input global"
+                      placeholder="promocodni kiriting"
+                      type="text"
+                    />
+                  </div>
+
+                  <button class="check-valid">Xaridni tastiqlang</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="madol-field hidden">  
+      <div class="madal">
+        <div class="arrow">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="modal-img">
+          <img id="madalImg" />
+        </div>
+        <div class="modal-right">
+          <div class="modal-right__text">
+            <h4 class="modalTitle"></h4>
+            <p class="modalText">
+            </p>
+          </div>
+          <div class="counter">
+            <div class="pitsa-size">
+              <h4>Pitsa kattaligi</h4>
+              <div class="amount">
+                <span onclick="decrement()" class="minus" >
+                  <span>-</span>
+                </span>
+                <div><b class="sanoq" id="root">1</b><b>-ta</b></div>
+                <span onclick="increment()" class="plus">
+                  <span>+</span>
+                </span>
+              </div>
+              <div class="fil-wrapper">
+                <span class="fill filActive">qalin</span>
+                <span class="fill">ingichka</span>
+              </div>
+            </div>
+          </div>
+          <div class="addWrapper-toCard">
+            <h4 class="modal-price">
+              
+            </h4>
+            <button class="addBtn global">Savatga qo'shish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper ">
+      <div class="container">
+        <header>
+          <div class="header-left">
+            <div class="header-logo">
+              <a href="#" target="_blank">
+                <img
+                  src="./img/div.header__logo.svg"
+                  alt="logo"
+                  class="headerImg"
+                />
+              </a>
+            </div>
+            <div class="input-div">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Pitsalarni qidirish"
+                id="search"
+                class="global"
+              />
+            </div>
+          </div>
+          <button class="header-btn" id="korzinka">
+            <div class="header-price">
+              <span>0</span>
+              <span>UZS</span>
+            </div>
+            <div class="button">
+              <span class="button-Icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </span>
+              <span class="products-length"> 0 </span>
+            </div>
+          </button>
+        </header>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="tab">
+            <ul class="tabs">
+              <li class="tabs-item active">Barchasi</li>
+              <li class="tabs-item">Go’shtli</li>
+              <li class="tabs-item">Pishloqli</li>
+              <li class="tabs-item">Qo’ziqorinli</li>
+              <li class="tabs-item">Achchiq</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="cardCover">
+            <div class="cardCover-title">
+              <h1>Barcha pitsalar</h1>
+            </div>
+            <div class="Allcards root"></div>
+            <div class="meatcards root hidden" ></div>
+            <div class="cheaseCards root hidden"></div>
+            <div class="qoziqornliCards root hidden"></div>
+            <div class="spicyCards root hidden"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+    
+    <script async defer src="./js/main.js"></script>
+  </body>
+</html>
